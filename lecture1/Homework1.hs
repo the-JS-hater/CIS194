@@ -16,6 +16,7 @@ toDigitsRev n
 
 doubleEveryOther :: [Integer] -> [Integer]
 doubleEveryOther [] = []
+doubleEveryOther [n] = [n]
 doubleEveryOther (x : xs : xss) = [x, xs * 2] ++ (doubleEveryOther xss)
 
 --Exercise 3 
